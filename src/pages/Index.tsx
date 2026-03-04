@@ -18,44 +18,46 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroBg} alt="" className="w-full h-full object-cover opacity-20" />
+          <img src={heroBg} alt="" className="w-full h-full object-cover opacity-10" />
           <div className="absolute inset-0 bg-gradient-to-b from-background/60 to-background" />
         </div>
-        <div className="section-container relative z-10 py-20">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: [0.25, 0.4, 0.25, 1] }}
-          >
-            <p className="font-display text-sm md:text-base uppercase tracking-[0.3em] text-primary mb-6">
-              Web Designer & Developer
-            </p>
-            <h1 className="heading-xl mb-6">
-              Hi, I'm <span className="gradient-text">Favor</span>.
-              <br />
-              I craft digital
-              <br />
-              experiences.
-            </h1>
-            <p className="text-body max-w-lg mb-10">
-              Transforming ideas into beautiful, responsive, and interactive websites 
-              that leave lasting impressions.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <Link
-                to="/portfolio"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-display font-medium rounded-lg hover:opacity-90 transition-opacity"
-              >
-                View My Work <ArrowRight size={18} />
-              </Link>
-              <Link
-                to="/contact"
-                className="inline-flex items-center gap-2 px-8 py-4 border border-border text-foreground font-display font-medium rounded-lg hover:bg-secondary transition-colors"
-              >
-                Get In Touch
-              </Link>
-            </div>
-          </motion.div>
+        <div className="section-container relative z-10 py-20 max-w-7xl">
+          <div className="max-w-2xl">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: [0.25, 0.4, 0.25, 1] }}
+            >
+              <p className="font-display text-sm md:text-base uppercase tracking-[0.3em] text-primary mb-6">
+                Web Designer & Developer
+              </p>
+              <h1 className="heading-xl mb-6">
+                Hi, I'm <span className="gradient-text">Favor</span>.
+                <br />
+                I craft digital
+                <br />
+                experiences.
+              </h1>
+              <p className="text-body max-w-lg mb-10">
+                Transforming ideas into beautiful, responsive, and interactive websites 
+                that leave lasting impressions.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <Link
+                  to="/portfolio"
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-display font-medium rounded-lg hover:opacity-90 transition-opacity"
+                >
+                  View My Work <ArrowRight size={18} />
+                </Link>
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center gap-2 px-8 py-4 border border-border text-foreground font-display font-medium rounded-lg hover:bg-secondary transition-colors"
+                >
+                  Get In Touch
+                </Link>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
